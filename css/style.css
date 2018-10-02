@@ -12,5 +12,113 @@ body {
 	background-color: #0E0B16;
 	color: #E7DFDD;
 	margin: 0;
+	padding: 0; 
+}
+
+nav {
+	width: 100%;
+	top: 0;
+	position: fixed;
 	padding: 0;
+	box-sizing: border-box;
+	background-color: #0E0B16;
+}
+
+nav h1 {
+	margin: 0;
+	padding: 0;
+	float: left;
+	padding: 15px 20px;
+	font-size: 1.5em;
+	color: #F8F8FF;
+}
+
+nav h1 a {
+	text-decoration: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px 30px;
+	transition: .2s;
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	color: #F8F8FF;
+}
+
+nav ul li:hover {
+	text-decoration: none;
+	border-bottom: solid 3px #A239CA;
+}
+
+.responsive-nav {
+	width: 100%;
+	top: 0;
+	position: fixed;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	display: none;
+	background-color: #0E0B16;
+}
+
+.responsive-nav h3 {
+	margin: 0;
+	padding: 10px 10px 10px 0;
+	float: left;
+	color: #F8F8FF;
+}
+
+.responsive-nav h3 a {
+	text-decoration: none;
+}
+
+.responsive-nav h4 {
+	margin: 0;
+	padding: 10px 0 10px 10px;
+	float: right;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;
+		padding: 0;
+	}
+
+	.menu {
+		color: #F8F8FF;
+	}
+
+	.responsive-nav {
+		display: block;
+	}
+
+	nav h1 {
+		display: block;
+		float: left;
+	}
+
+	nav ul {
+		float: left;
+		display: none;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	h1.brand {
+		display: none;
+	}
 }
